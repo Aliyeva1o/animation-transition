@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 30px 10px;
+}
+.big-box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(179, 54, 54);
+    margin: 10px auto;
+    position: relative;
+    animation-duration: 6s;
+}
+.med-box{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    animation-duration: 5.5s;
+}
+.small-box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    animation-duration: 2.5s;
+}
+.big-box, .small-box, .med-box{
+    animation-name: move;
+}
+@keyframes move {
+    50% {
+        transform: rotate(180deg);
+    }
+}

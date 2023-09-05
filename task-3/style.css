@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.red{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 1s ease-in-out;
+}
+.blue{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(4, 0, 255);
+    transition: 1.5s ease-in-out;
+}
+
+body:hover .red  {
+    width: 300px;
+}
+
+body:hover .blue  {
+    width: 300px;
+}

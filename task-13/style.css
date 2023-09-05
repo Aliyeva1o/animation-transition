@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h3{
+    margin: 20px;
+}
+.first-div, .second-div{
+    height: 50px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 20px;
+}
+.animated , .not-animated{
+height: 50px;
+width: 100px;
+background-color: blue;
+}
+.animated{
+animation-name: move;
+animation-duration:3s ; 
+animation-iteration-count: infinite;
+}
+@keyframes move{
+   0% {
+    background-color: blue; width:100px ;
+   } 
+   50% {
+    background-color: blue; width: 150px;
+   } 
+   75%{
+    background-color: blue;width: 200px;
+   }
+   100%{
+    background-color: blue;width: 100px;
+   }
+}
+.not-animated:hover::before{
+    content: "";
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+}
+/* .not-animated:hover::after{
+    content: "";
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    transition: 7s;
+} */
+

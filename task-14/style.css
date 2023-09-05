@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.box-1,.box-2,.box-3,.box-4,.box-5{
+    width: 20px;
+    height: 140px;
+    background-color: rgb(66, 209, 173);
+    margin: 0 5px;
+    animation: slide 1s infinite alternate;
+}
+
+.box-1 {
+    animation-delay: 0.2s;
+}
+
+.box-2 {
+    animation-delay: 0.4s;
+}
+
+.box-3 {
+    animation-delay: 0.6s;
+}
+
+.box-4 {
+    animation-delay: 0.8s;
+}
+
+.box-5 {
+    animation-delay: 1s;
+}
+
+@keyframes slide {
+    0% {
+        transform: scaleY(0.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+.box-6,.box-7,.box-8,.box-9,.box-10{
+    width: 20px;
+    height: 140px;
+    background-color: rgb(38, 20, 177);
+    margin: 0 5px;
+    animation: slide 1s infinite alternate-reverse;
+}
+.box-6 {
+    animation-delay: 0.2s;
+}
+
+.box-7 {
+    animation-delay: 0.4s;
+}
+
+.box-8 {
+    animation-delay: 0.6s;
+}
+
+.box-9 {
+    animation-delay: 0.8s;
+}
+
+.box-10 {
+    animation-delay: 1s;
+}

@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+div{
+    width: 300px;
+    height:150px ;
+    background-color: blueviolet;
+    margin: 100px auto;
+}
+div:hover{
+    transition-duration: 1s;
+    transform: scale(1.3);
+}

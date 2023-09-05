@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    margin: 20px 20px;
+}
+p{
+    margin-bottom: 20px;
+}
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 300px;
+}
+h1{
+    align-self: center;
+}
+ .red{
+    position: absolute;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+ .blue{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+ .yellow{
+    position: absolute;
+    right: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+}
+ .green{
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.content:hover .red{
+    transition-duration: 500ms;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+.content:hover .yellow{
+    transition-duration: 500ms;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+.content:hover .blue{
+    transition-duration: 500ms;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+.content:hover .green{
+    transition-duration: 500ms;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+.red, .green, .blue, .yellow{
+    transition: all 500ms linear;
+}
+.second{
+        position: absolute;
+        top: 400px;  
+}
